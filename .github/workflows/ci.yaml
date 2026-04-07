@@ -1,0 +1,21 @@
+name: User CI
+on: [push]
+jobs:
+  Buid:
+    runs-on: self-hosted
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+      - run: echo build
+  Test:
+    runs-on: self-hosted
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+      - run: echo test
+  Deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+      - run: echo deploy
