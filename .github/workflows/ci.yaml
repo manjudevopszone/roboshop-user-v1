@@ -1,5 +1,5 @@
 name: User CI
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
   call-common:
     uses: manjudevopszone/github-actions-reusable/.github/workflows/ci.yaml@main
